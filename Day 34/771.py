@@ -1,0 +1,13 @@
+class Solution:
+    def numJewelsInStones(self, jewels: str, stones: str) -> int:
+        count = 0
+        jewel = set(jewels)
+        for char in stones:
+            if char in jewel:
+                count += 1
+        return count
+        
+                
+
+
+        
